@@ -46,5 +46,21 @@ function createQuestion() {
         formGroup.appendChild(questionEl);
         
         questionForm.appendChild(formGroup);
+        
+    for(var j = 0; j < questions[i].answers.length; j++) {
+        var answerDiv = document.createElement('div');
+        var answerEl = document.createElement('input');
+        var answerText = document.createTextNode(questions[i].answers[j]);
+        
+        answerDiv.appendChild(answerEl);
+        answerDiv.appendChild(answerText);
+        
+        answerDiv.className  = 'questionWrap';
+        answerEl.type        = 'radio';
+        answerEl.name        = 'radio' + [i];
+        answerEl.value       = questions[i].answers[j];
+        
+        formGroup.appendChild(answerDiv);
+    };
     };
 };
