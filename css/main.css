@@ -35,6 +35,9 @@ body {
 .right {
     color:#27ae60;
 }
+.wrong {
+    color:red;
+}
 input[type] {
     margin:10px;
 }
