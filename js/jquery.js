@@ -79,24 +79,23 @@ function submitAnswer() {
     var els = document.getElementsByTagName('input');
     
     for(var i =0; i < els.length; i++) {
-        
         if(els[i].checked && els[i].value == questions[0].correct) {
+            
             questions.shift();
+            
             els[i].parentElement.className = 'questionWrap right';
             
             if(questions.length == 0) {
                 questionForm.innerHTML = '';
                 
-                questionForm.style.textAlign = 'center';
-                questionForm.style.margin = '0 auto';
-                
-                questionForm.innerHTML = '<h1> Good job!</h1>' + '<br>' + "<img src='images/shark.jpg'>"; 
+                questionForm.innerHTML = '<h1>Good job!</h1>' + "<img src='images/shark.jpg'>";
                 
                 return;
             };
+            
             setTimeout(function() {
                 createQuestion();
-            }, 2000);
+            }, 1000);
             
             return;
         };  
@@ -108,5 +107,3 @@ function submitAnswer() {
         };
     };
 };
-
-    
