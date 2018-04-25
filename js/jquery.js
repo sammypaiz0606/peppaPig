@@ -77,18 +77,18 @@ function createQuestion() {
 
 function submitAnswer() {
     var els = document.getElementsByTagName('input');
-    
     for(var i =0; i < els.length; i++) {
         if(els[i].checked && els[i].value == questions[0].correct) {
             
             questions.shift();
             
             els[i].parentElement.className = 'questionWrap right';
-            
             if(questions.length == 0) {
                 questionForm.innerHTML = '';
                 
                 questionForm.innerHTML = '<h1>Good job!</h1>' + "<img src='images/shark.jpg'>";
+                questionForm.className ='animated zoomIn';
+                
                 
                 return;
             };
