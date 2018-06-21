@@ -93,7 +93,7 @@ function submitAnswer() {
                 questionForm.innerHTML = '';
                 
                 questionForm.innerHTML = '<h1>Good job!</h1>' + "<img src='images/shark.jpg'>";
-                questionForm.className ='animated zoomIn';
+                questionForm.className ='animated flipInX';
                 
                 
                 return;

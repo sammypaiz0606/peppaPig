@@ -1,23 +1,30 @@
+@font-face {
+    font-family:'peppaFont';
+    src:url('../fonts/Peppa Pig.ttf');
+}
 body {
     background-color:#8BBAF5;
+    font-family:'peppaFont';
+}
+
+.pep {
+    text-align: center;
+  
+}
+.peppaFam {
+    width:380px;
+    position: relative;
+    top:-150px;
 }
 .wrapper {
     text-align: center;
     margin-top:200px;
 }
-#button1 {
-    border-radius:5px;
-    background-color:#a2a2a2;
-    font-size:35px;
-    font-weight:bold;
-}
-#button1:hover {
-    border:2px solid #000;
-}
+
 #questionForm {
     text-align: center;
     width:75%;
-    margin:22% auto;
+    margin:-15% auto;
 }
 .questionWrap {
     text-align: left;
@@ -41,17 +48,19 @@ body {
 input[type] {
     margin:10px;
 }
-.btn-primary {
+.button{
     border-color:#292624;
-    background-color:#373431;
-    color:#cecbca;
+    background-color:orange;
+    font-weight:bold;
+    color:red;
 }
-.btn-primary:hover {
+.button:hover {
     cursor:pointer;
-    background-color:#292624;
-    color:#000;
+    background-color:darkorange;
+    color:#F3C0D7;
+    border:1px solid red;
 }
-img {
+/*img {
     max-width:100%;
     position: relative;
     top:-100px;
