@@ -1,5 +1,5 @@
 body {
-    background-color:#d2d2d2;
+    background-color:#8BBAF5;
 }
 .wrapper {
     text-align: center;
@@ -52,6 +52,8 @@ input[type] {
     color:#000;
 }
 img {
-    width:100%;
+    max-width:100%;
+    position: relative;
+    top:-100px;
 }
 

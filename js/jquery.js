@@ -1,19 +1,25 @@
 var questions = [
     {
-        question: 'What does HTML stand for?',
-        answers:['Hyper Text Markup Field', 'Hyper Text Markup Language', 'Hope Text Maker Language', 'Hype Talk Moon Floor'],
-        correct:'Hyper Text Markup Language'
+        question: 'Who is the main character?',
+        answers:['Mommy Pig', 'George Pig', 'Peppa Pig', 'Daddy Pig'],
+        correct:'Peppa Pig'
     }, 
     {
-        question: 'What declares a HTML5 document?',
-        answers:['html', 'head', 'title', '!DOCTYPE html'],
-        correct:'!DOCTYPE html'
+        question: 'What is the name of Peppa Pig little brother?',
+        answers:['Freddy ', 'George', 'Danny', 'Edmond'],
+        correct:'George'
     },
      {
-        question: 'How old is Ariana?',
-        answers:[2, 1, 14, 4],
-        correct:4
+        question: "What color is the Mommy Pig's dress?",
+        answers:['Blue', 'Red', 'Pink', 'Orange'],
+        correct:'Orange'
+    },
+    {
+        question: "Who is George's best friend?",
+        answers:['Wendy Wolf', 'Dodier Donkey', 'Richard Rabbit', 'Edmond Elephant'],
+        correct:'Richard Rabbit'
     }
+    
     
     
 ];
