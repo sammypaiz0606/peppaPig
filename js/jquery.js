@@ -92,7 +92,9 @@ function submitAnswer() {
             if(questions.length == 0) {
                 questionForm.innerHTML = '';
                 
-                questionForm.innerHTML = '<h1>Good job!</h1>' + "<img src='images/shark.jpg'>";
+                questionForm.innerHTML = '<h1>Good job!</h1>' + "<img src='images/lastpeppa.jpg'>";
+                
+                
                 questionForm.className ='animated flipInX';
                 
                 
@@ -113,3 +115,29 @@ function submitAnswer() {
         };
     };
 };
+
+// audio function
+function toggleAudio() {
+    var audioElem = document.getElementById('player');
+    var soundOn = document.getElementById('play');
+    var soundOff = document.getElementById('pause');
+    
+    if(audioElem.paused) {
+        audioElem.play();
+        $(soundOn).show();
+        $(soundOff).hide();
+    } else {
+        audioElem.pause();
+        $(soundOn).hide();
+        $(soundOff).show();
+    }
+}
+
+
+
+
+
+
+
+
+

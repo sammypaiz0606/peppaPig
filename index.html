@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Peppa Pig Quiz</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel ='stylesheet' href='css/animate.css'/>
         <link rel='stylesheet' href='css/main.css'/>
@@ -9,17 +10,25 @@
     </head>
     
 <body>
-    <div class='pep animated zoomIn'>
+<img class='backImg' src='images/backImg.jpg'/>
+
+<div class='wrapper'>
+    
+   <img id='play' class='animated pulse' onclick='toggleAudio()' src='http://www.clker.com/cliparts/J/2/K/t/p/c/play-button-opaque-80-md.png'>
+    
+    <audio id='player' src='audio/peppapig.mp3' control loop></audio>
+    <img id='pause'  onclick='toggleAudio()' src='http://icons.iconarchive.com/icons/icons-land/play-stop-pause/256/Stop-Hot-icon.png'>
+
+    <form id='questionForm'>
+          <div class='pep animated zoomIn'>
         <img class='peppaFam' src='images/peppapig.jpg'/>
     </div>
-<div class='wrapper'>
-    <form id='questionForm'>
         <h1 id='title'>Peppa Pig cartoon Quiz</h1>
         <button type='button' id='startBtn' onclick='startGame()' class='btn btn-lg btn-primary button animated flipInX'>Start Game</button>
     </form>
-    <p>iduhweisudfjh3repwuidsjfhn3ruejhfewi</p>
 
 </div>
+    
 
     
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

@@ -6,38 +6,58 @@ body {
     background-color:#8BBAF5;
     font-family:'peppaFont';
 }
-
-.pep {
-    text-align: center;
-  
-}
-.peppaFam {
-    width:380px;
-    position: relative;
-    top:-150px;
+.backImg {
+    width:100%;
+    position: absolute;
+    z-index: -2;
 }
 .wrapper {
     text-align: center;
-    margin-top:200px;
+    transition-delay:4s;
 }
+
+.pep {
+    width:600px;
+    text-align: center;
+    position: relative;
+    top:-60px;
+
+  
+}
+.peppaFam {
+    width:680px;
+    
+}
+
 
 #questionForm {
     text-align: center;
-    width:75%;
-    margin:-15% auto;
+    width:500px;
+    margin:5% auto;
+}
+#questionForm img {
+    width:500px;
+    position: relative;
+    top:30px;
 }
 .questionWrap {
     text-align: left;
     font-size:25px;
-    background-color:#2E2C29;
+    background-color:#F3C1D8;
     display:block;
     line-height:2em;
     overflow:hidden;
-    color:#fff;
+    color:darkorange;
     margin:15px;
     border-radius:5px;
-    box-shadow: 0 1px rgba(255, 255, 255, 0.06);
+    box-shadow: 0 3px rgba(123, 195, 111, 0.6);
 
+}
+#title {
+    font-size:50px;
+    position: relative;
+    top:-10px;
+    left:50px;
 }
 .right {
     color:#27ae60;
@@ -52,7 +72,12 @@ input[type] {
     border-color:#292624;
     background-color:orange;
     font-weight:bold;
+    font-size:30px;
     color:red;
+    position: relative;
+    top:10px;
+    left:50px;
+    width:300px;
 }
 .button:hover {
     cursor:pointer;
@@ -64,5 +89,85 @@ input[type] {
     max-width:100%;
     position: relative;
     top:-100px;
+}
+*/
+
+#play, #pause {
+    width:50px;
+    position: absolute;
+    left:200px;
+    z-index: 2;
+    
+}
+
+#play:hover,
+#pause:hover {
+    cursor:pointer;
+}
+#pause {
+    display:none;
+}
+@media only screen and (max-width:700px) {
+    #play, #pause {
+        position: relative;
+        left:-230px;
+        top:70px;
+    }
+    #questionForm img {
+        width:500px;
+        position: relative;
+        top:0px;
+        margin-right:70px;
+    }
+    #title {
+        margin-right:50px;
+    }
+}
+@media only screen and (max-width:600px) {
+      #play, #pause {
+        position: relative;
+        left:-230px;
+        top:70px;
+    }
+    #questionForm img {
+        width:450px;
+        position: relative;
+        top:0px;
+        margin-right:70px;
+    }
+    #title {
+        margin-right:70px;
+    }
+}
+}
+@media only screen and (max-width:500px) {
+  #play, #pause {
+        position: relative;
+        top:60px;
+        left:-150px;
+    }
+    #questionForm img  {
+    width:300px;
+    
+    }
+    #title {
+        width:300px;
+    }
+}
+/*
+@media only screen and (max-width:400px) {
+     #play, #pause {
+        position: relative;
+        top:60px;
+        left:-150px;
+    }
+    #questionForm img  {
+    width:300px;
+    
+    }
+    #title {
+        width:400px;
+    }
+}
 }
 
